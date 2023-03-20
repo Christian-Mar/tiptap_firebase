@@ -10,6 +10,17 @@ export default function Comments() {
 				<li>
 					<p>Firebase: firebase/config.js + .env.local</p>
 				</li>
+				<li>
+					<p>
+						Dynamic import:{' '}
+						<a href='https://blog.logrocket.com/dynamic-imports-code-splitting-next-js/'>
+							article on LogRocket
+						</a>
+					</p>
+				</li>
+				<li>
+					<p>Can I just import the component with dynamic import and use 'ssr: false' there, istead of using it in the component itself?</p>
+				</li>
 			</ul>
 		</div>
 	);
