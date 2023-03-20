@@ -10,3 +10,6 @@
 8. Insert the update function 
 9. Styling 
 
+... try modal 
+
+Introduction & deep dive into Rich Text Editor: https://www.youtube.com/watch?v=EwoS0dIx_OI
