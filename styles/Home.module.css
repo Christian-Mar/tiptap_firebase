@@ -1,0 +1,44 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+  width: 100vw;
+}
+
+.content__container {
+  display: flex; 
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.content__functionality {
+margin: 30px;
+width: 45vw;
+padding: 25px;
+border: 1px solid black;
+border-radius: 5px;
+}
+
+.content__functionality_children {
+  background-color: rgb(217, 255, 238);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.content__functionality_output {
+  padding: 20px;
+}
+
+.comments__container {
+margin: 30px;
+width: 45vw;
+padding: 25px;
+border: 1px solid black;
+border-radius: 5px;
+}
+
+.comments__content {
+  padding: 25px;
+}
