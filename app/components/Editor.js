@@ -34,7 +34,7 @@ export default function Editor() {
     <LexicalComposer initialConfig={initialConfig}>
       <PlainTextPlugin
         contentEditable={<ContentEditable className={styles.contentEditable}/>}
-        placeholder={<div>Enter some text...</div>}
+        placeholder={<div className={styles.placeholder}>Enter some text...</div>}
         ErrorBoundary={LexicalErrorBoundary}
         
       />
