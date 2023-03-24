@@ -19,7 +19,7 @@ export default function Comments() {
 					</p>
 				</li>
 				<li>
-					<p>Can I just import the component with dynamic import and use 'ssr: false' there, istead of using it in the component itself?</p>
+					<p>Can I just import the component with dynamic import and use 'ssr: false' there, instead of using it in the component itself? Or, can I just use "use client"?</p>
 				</li>
 			</ul>
 		</div>
