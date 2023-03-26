@@ -13,7 +13,7 @@ import LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary';
 import styles from '../../styles/Editor.module.css';
 
 const theme = {
-	// Theme styling goes here
+	// Theme styling goes here for example font-family
 	
 	}
 
