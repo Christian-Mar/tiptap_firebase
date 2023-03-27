@@ -7,6 +7,7 @@ import {LexicalComposer} from '@lexical/react/LexicalComposer';
 import {RichTextPlugin} from '@lexical/react/LexicalRichTextPlugin';
 import {ContentEditable} from '@lexical/react/LexicalContentEditable';
 import {HistoryPlugin} from '@lexical/react/LexicalHistoryPlugin';
+import {HeadingNode} from '@lexical/rich-text';
 //import {OnChangePlugin} from '@lexical/react/LexicalOnChangePlugin';
 //import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
 import LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary';
@@ -17,7 +18,12 @@ const theme = {
 	
 	}
 
-
+function MyHeadingPlugin() {
+  const [editor] = useLexicalComposerContext();
+  const onClick = (e) => {
+    editor.update(() => {})
+  }
+return <button onClick={onClick}>Heading</button>}
 
 function onError(error) {
   console.error(error);
@@ -28,6 +34,9 @@ export default function Editor() {
     namespace: 'MyEditor', 
     theme,
     onError,
+    nodes: [
+      HeadingNode
+    ]
   };
 
   return (
