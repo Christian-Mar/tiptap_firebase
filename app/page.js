@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
 	return (
 		<main className={`${styles.main} ${inter.className}`}>
-			<h1>Setup of Lexical</h1>
+			<h1>Setup of Tiptap</h1>
 			<div className={styles.content__container}>
 				<div className={styles.content__functionality}>
 					<div className={styles.content__functionality_children}>

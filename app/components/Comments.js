@@ -19,7 +19,18 @@ export default function Comments() {
 					</p>
 				</li>
 				<li>
-					<p>Can I just import the component with dynamic import and use 'ssr: false' there, instead of using it in the component itself? Or, can I just use "use client"? With the app directory you can use 'use client'</p>
+					<p>
+						Can I just import the component with dynamic import and use 'ssr:
+						false' there, instead of using it in the component itself? Or, can I
+						just use "use client"? With the app directory you can use 'use
+						client'
+					</p>
+				</li>
+				<li>
+					<p>
+						Tiptap docs for  
+						<a href='https://tiptap.dev/installation/nextjs'> Next.js</a> start.
+					</p>
 				</li>
 			</ul>
 		</div>
