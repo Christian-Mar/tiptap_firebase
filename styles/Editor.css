@@ -11,7 +11,36 @@
   top: 16px;
   padding-left: 20px;
 }
+.menu-bar {
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.menu-bar button {
+  font-size: 18px;
+  margin: 7px;
+  margin-right: 15px;
+  outline: none;
+  border: none;
+  background: none;
+  color: rgb(70,70,70);
+  cursor: pointer;
+}
+
+.text__editor {
+  border-radius: 5px;
+  border: 1px solid green;
+}
+
+.ProseMirror {
+padding: 10px;
+border-top: 1px solid green;
+background: white;
+border-radius: 0 0 5px 5px;
+min-height: 100px;
+}
 
  .ProseMirror > * + * {
     margin-top: 0.75em;
