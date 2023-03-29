@@ -1,5 +1,5 @@
 import InputField from './InputField';
-import Editor from './Editor';
+import Tiptap from './Editor';
 import styles from '../../styles/Form.module.css';
 
 export default function Form() {
@@ -9,7 +9,7 @@ export default function Form() {
 			<InputField />
 			<h2 className={styles.title}>Editor</h2>
 			<div className={styles.editorWrapper}>
-				<Editor />
+				<Tiptap />
 			</div>
 		</div>
 	);
