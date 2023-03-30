@@ -20,3 +20,5 @@ export default function Form() {
 		</div>
 	);
 }
+
+// json -> https://tiptap.dev/guide/output

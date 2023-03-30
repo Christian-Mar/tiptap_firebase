@@ -122,3 +122,5 @@ const Tiptap = ({setDesc}) => {
 };
 
 export default Tiptap;
+
+// json -> https://tiptap.dev/guide/output
