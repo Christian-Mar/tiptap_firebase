@@ -103,10 +103,14 @@ const MenuBar = ({ editor }) => {
 	);
 };
 
-const Tiptap = () => {
+const Tiptap = ({setDesc}) => {
 	const editor = useEditor({
 		extensions: [StarterKit, Underline],
 		content: ``,
+    onUpdate: ({editor}) => {
+      const html = editor.getHTML();
+      setDesc(html);
+    }
 	});
 
 	return (
