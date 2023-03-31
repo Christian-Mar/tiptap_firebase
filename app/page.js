@@ -7,6 +7,9 @@ import styles from '../styles/Home.module.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+	// after return <div>{!session ? (<Auth />) : (<main>...</main>)}</div>
+	// https://github.com/Christian-Mar/skill-app
+
 	return (
 		<main className={`${styles.main} ${inter.className}`}>
 			<h1>Setup of Tiptap</h1>
@@ -21,7 +24,7 @@ export default function Home() {
 				</div>
 				<div className={styles.comments__container}>
 					<h2>Comments</h2>
-					<Comments/>
+					<Comments />
 				</div>
 			</div>
 		</main>

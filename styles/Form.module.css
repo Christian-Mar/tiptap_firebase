@@ -5,3 +5,18 @@
 .title {
   margin: 15px 0;
 }
+
+.form__SubmitButton {
+    height: 50px;
+    width: 200px;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 25px;
+    margin: 3rem 2rem 1rem;
+    cursor: pointer;
+}
+
+.form__SubmitButton:hover {
+    background: #5fc349;
+}
