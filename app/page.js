@@ -8,6 +8,7 @@ import styles from '../styles/Home.module.css';
 import { db } from '../firebase/config';
 import { collection, getDocs } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
+//import parser from 'html-react-parser';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -33,25 +34,29 @@ export default function Home() {
 	}, [list]);
 
 	return (
-		<main className={`${styles.main} ${inter.className}`}>
-			<h1>Setup of Tiptap</h1>
-			<div className={styles.content__container}>
-				<div className={styles.content__functionality}>
-					<div className={styles.content__functionality_children}>
-						<Form />
+		<div className={inter.className}>
+			<main className={styles.main}>
+				<h1>Setup of Tiptap</h1>
+				<div className={styles.content__container}>
+					<div className={styles.content__functionality}>
+						<div className={styles.content__functionality_children}>
+							<Form />
+						</div>
+						<div className={styles.content__functionality_output}>
+							Show the data
+						</div>
+						{list.map(({ title, desc, id }) => (
+							<div key={id}>
+								{title} {desc}
+							</div>
+						))}
 					</div>
-					<div className={styles.content__functionality_output}>
-						Show the data
+					<div className={styles.comments__container}>
+						<h2>Comments</h2>
+						<Comments />
 					</div>
-					{list.map(({ title, id }) => (
-						<div key={id}>{title}</div>
-					))}
 				</div>
-				<div className={styles.comments__container}>
-					<h2>Comments</h2>
-					<Comments />
-				</div>
-			</div>
-		</main>
+			</main>
+		</div>
 	);
 }

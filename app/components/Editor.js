@@ -106,7 +106,7 @@ const MenuBar = ({ editor, desc }) => {
 const Tiptap = ({setDesc, desc}) => {
 	const editor = useEditor({
 		extensions: [StarterKit, Underline],
-		content: ``,
+    content: ``,
     onUpdate: ({editor}) => {
       const html = editor.getHTML();
       setDesc(html);
