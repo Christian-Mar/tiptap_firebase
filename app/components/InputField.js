@@ -1,15 +1,15 @@
 import styles from '../../styles/InputField.module.css';
 
-export default function InputField({ title, updateFormTitle }) {
-	const onChange = e => updateFormTitle(e.target.name, e.target.value);
+export default function InputField({ title, setTitle }) {
+	//const onChange = e => updateFormTitle(e.target.name, e.target.value);
 	return (
 		<div>
 			<input
 				className={styles.inputField}
 				type='text'
 				name='title'
-				onChange={onChange}
-				value={title}
+				onChange={e => setTitle(e.target.value)}
+				defaultValue={title}
 				placeholder='Carpaccio'
 			/>
 		</div>

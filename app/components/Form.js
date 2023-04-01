@@ -14,10 +14,6 @@ export default function Form() {
 	const [desc, setDesc] = useState('');
 	const router = useRouter();
 
-	const updateFormTitle = (name, value) => {
-		setTitle(title);
-	};
-
 	const handleSubmit = async e => {
 		e.preventDefault();
 
@@ -36,7 +32,7 @@ export default function Form() {
 	return (
 		<div>
 			<h2 className={styles.title}>Input field</h2>
-			<InputField title={title} updateFormTitle={updateFormTitle} />
+			<InputField title={title} setTitle={setTitle} />
 			<h2 className={styles.title}>Editor</h2>
 			<div className={styles.editorWrapper}>
 				<Tiptap setDesc={setDesc} />
