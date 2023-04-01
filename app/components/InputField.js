@@ -8,8 +8,8 @@ export default function InputField({ title, setTitle }) {
 				className={styles.inputField}
 				type='text'
 				name='title'
-				onChange={e => setTitle(e.target.value)}
-				defaultValue={title}
+				onChange={e => {setTitle(e.target.value)}}
+				value={title}
 				placeholder='Carpaccio'
 			/>
 		</div>

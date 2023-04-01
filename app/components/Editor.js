@@ -20,7 +20,7 @@ import {
 	FaUnderline,
 } from 'react-icons/fa';
 
-const MenuBar = ({ editor }) => {
+const MenuBar = ({ editor, desc }) => {
 	if (!editor) {
 		return null;
 	}
@@ -103,20 +103,21 @@ const MenuBar = ({ editor }) => {
 	);
 };
 
-const Tiptap = ({setDesc}) => {
+const Tiptap = ({setDesc, desc}) => {
 	const editor = useEditor({
 		extensions: [StarterKit, Underline],
 		content: ``,
     onUpdate: ({editor}) => {
       const html = editor.getHTML();
       setDesc(html);
+      
     }
 	});
 
 	return (
 		<div className='text__editor'>
 			<MenuBar editor={editor} />
-			<EditorContent editor={editor} />
+			<EditorContent editor={editor} desc={desc}/>
 		</div>
 	);
 };

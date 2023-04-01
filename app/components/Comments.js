@@ -28,8 +28,13 @@ export default function Comments() {
 				</li>
 				<li>
 					<p>
-						Tiptap docs for  
+						Tiptap docs for
 						<a href='https://tiptap.dev/installation/nextjs'> Next.js</a> start.
+					</p>
+				</li>
+				<li>
+					<p>
+						Editor not clearing after submit - clearing works with rerouting
 					</p>
 				</li>
 			</ul>

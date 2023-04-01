@@ -24,6 +24,9 @@ export default function Form() {
 				created: Timestamp.now(),
 			});
 			router.push('/');
+			setTitle('');
+			setDesc('');
+			//editor.setContent(null);
 		} catch (err) {
 			alert(err);
 		}
@@ -35,7 +38,7 @@ export default function Form() {
 			<InputField title={title} setTitle={setTitle} />
 			<h2 className={styles.title}>Editor</h2>
 			<div className={styles.editorWrapper}>
-				<Tiptap setDesc={setDesc} />
+				<Tiptap setDesc={setDesc} desc={desc}/>
 				<div>{parser(desc)}</div>
 			</div>
 			<button
