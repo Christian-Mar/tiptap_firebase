@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css';
 import { db } from '../firebase/config';
 import { collection, getDocs } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
-//import parser from 'html-react-parser';
+import parser from 'html-react-parser';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -45,9 +45,9 @@ export default function Home() {
 						<div className={styles.content__functionality_output}>
 							Show the data
 						</div>
-						{list.map(({ title, desc, id }) => (
+						{list.map(({ title, description, id }) => (
 							<div key={id}>
-								{title} {desc}
+								{title} {parser(description)}
 							</div>
 						))}
 					</div>
